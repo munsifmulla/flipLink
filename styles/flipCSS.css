@@ -1,0 +1,98 @@
+/*
+*/
+
+*{
+    padding: 0px;
+    margin:0px;
+}
+
+html{
+    padding: 0px;
+    margin:0px;
+}
+body{
+    padding: 0px;
+    margin:0px;
+}
+
+.clear{
+
+}
+
+#mainWrapper{
+
+}
+
+#mainWrapper a.flipVert{
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    vertical-align: top;
+    height: 19px;
+    overflow: hidden;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    perspective: 600;
+    transform-style: preserve-3d;
+    width: auto;
+}
+#mainWrapper a.flipHort{
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    vertical-align: top;
+    /*height: 19px;*/
+    /*overflow: hidden;*/
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    perspective: 600;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+#mainWrapper a.flipVert span{
+    display: inline-block;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+#mainWrapper a.flipVert:hover span{
+    -webkit-transform: translate(0px,-18px) ;
+    -moz-transform: translate(0px,-18px) ;
+    -ms-transform: translate(0px,-18px);
+    -o-transform: translate(0px,-18px);
+    transform: translate(0px,-18px);
+}
+
+#mainWrapper a.flipHort span{
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#mainWrapper a.flipHort:hover{
+    transform:rotateY(180deg);
+}
+#mainWrapper a span:first-of-type{
+    background: orange;
+}
+#mainWrapper a span:nth-of-type(2){
+    background: #efefef;
+}
+#mainWrapper a.flipHort span:nth-of-type(2){
+    transform: rotateY(180deg);
+}

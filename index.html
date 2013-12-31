@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flip Links</title>
+
+    <link rel="stylesheet" href="styles/flipCss.css"/>
+</head>
+<body>
+<div id = "mainWrapper">
+    <div>
+        "We are targeting a <a href = "#">significant</a> number of new users joining the Samsung family.
+        This not only offers an 18-month EMI programme but also an Easy Buy Back, which will
+        help users upgrade <a href = "#">significant</a> to newer models," Samsung Mobiles and IT's Country Head Vineet Taneja said in a statement.
+    </div>
+</div>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+<script type="text/javascript" src="scripts/flipLink.js"></script>
+<script>
+    $('body').flipLink({
+        flip:'verticle'
+    });
+</script>
+</body>
+</html>
